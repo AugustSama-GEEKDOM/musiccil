@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+
+# 本地密钥 / 私有配置：绝不能进仓库
+.musiccil/
+key
+*.key
+
+# GUI 编译产物
+gui/build/
+gui/selftest_tmp.cpp
+*.exe
+*.o
+*.obj
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# 临时调试产物（截图、日志、临时库），不属于仓库内容
+_tmp/

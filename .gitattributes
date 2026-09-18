@@ -1,0 +1,12 @@
+# 批处理必须保持 CRLF：cmd 解析 LF 换行的 .bat 会出错
+*.bat text eol=crlf
+
+# 其余文本统一 LF
+*.py   text eol=lf
+*.cpp  text eol=lf
+*.h    text eol=lf
+*.md   text eol=lf
+*.toml text eol=lf
+
+# 图片是二进制，别做行尾转换
+*.png binary

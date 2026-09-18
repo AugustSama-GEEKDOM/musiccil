@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "musiccil"
+version = "2.0.0"
+description = "终端唱片机播放器：封面取主题色、像素化封面旋转、mpv 真实播放"
+requires-python = ">=3.9"
+dependencies = ["Pillow>=9.1"]
+
+[project.optional-dependencies]
+# 系统媒体通知与媒体键（Windows 专用）。不装也能用，只是没有系统媒体控制。
+media = ["winsdk>=1.0.0b10; sys_platform == 'win32'"]
+
+[project.scripts]
+musiccil = "musiccil.cli:main"
+
+[tool.setuptools]
+packages = ["musiccil"]
