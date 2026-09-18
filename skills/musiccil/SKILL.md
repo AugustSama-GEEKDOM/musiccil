@@ -7,8 +7,8 @@ metadata:
 
 # musiccil
 
-`musiccil` 是一个终端唱片机播放器：封面主色驱动界面配色、唱片中心显示旋转的像素风封面、
-歌词同步、真实音频播放（mpv 后端）。
+`musiccil` 是个终端唱片机播放器：界面配色跟着当前封面走，唱片中心有一张跟着转的像素封面，
+歌词会滚，音频交给 mpv 真放。
 
 **本文档里一律用 `python -m musiccil`**：它依赖已装好的包（在项目根目录 `pip install -e .`），
 装好之后在**任何目录**下都能跑。裸命令 `musiccil` 的 console script 目录常常不在 PATH 里，
