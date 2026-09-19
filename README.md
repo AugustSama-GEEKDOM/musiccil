@@ -277,6 +277,30 @@ East Asian Width 算列宽。播放和绘制是分开的：mpv 在后台通过�
 python -m unittest discover -s tests -t .
 ```
 
+## 常见问题
+
+**提示没有密钥**
+
+跑一次 `musiccil --setup`，把密钥粘进去。剩多少配额去站点的「控制台 → 用量统计」看。
+
+**有窗口没声音**
+
+多半是这首取不到音频直链（版权限制），界面照开，就是不出声。换个平台试试：
+`musiccil -p kg "歌名"`。
+
+**提示找不到 mpv**
+
+设一下 `MUSICCIL_MPV`，指到 mpv.exe 的完整路径。
+
+**界面乱码或者画花了**
+
+终端要支持真彩色（24-bit）和 UTF-8。Windows Terminal、iTerm2、现在常见的 Linux
+终端都没问题，老的 cmd 窗口建议换成 Windows Terminal。
+
+**关掉窗口还有声音**
+
+正常按 `Q` 退出和直接关窗口都会连带结束 mpv。真有残留就去任务管理器结束 `mpv.exe`。
+
 ## 已知限制
 
 - 版权限制会让一部分曲目取不到音频直链，QQ、酷我、千千比较明显。播放器会自动跳过，
