@@ -174,11 +174,11 @@ python -m musiccil "城市夜晚 氛围" -l 10        # 同上，会先解析再
 python -m musiccil --window --file p.json     # 显式要求开窗
 ```
 
-**窗口默认是竖屏 50×42**（实测约 515×848 像素），唱片约占整屏高的三分之一，
-留白舒展、不像早期版本那样唱片吃掉整个窗口。需要别的尺寸时：
+**窗口默认是竖屏 70×56**（实测约 780×1240 像素），唱片约占整屏高的三分之一。需要
+别的尺寸时：
 
 ```bash
-python -m musiccil --window-size 50x46 --file p.json   # 想要更矮/更宽就改这里
+python -m musiccil --window-size 100x30 --file p.json   # 想要更矮/更宽就改这里
 ```
 
 觉得唱片转得太快或太慢时用 `--spin` 调（度/秒，默认 15 就是约 24 秒一圈，数值越小越慢）：

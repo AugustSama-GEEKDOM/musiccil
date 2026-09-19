@@ -116,7 +116,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-window", action="store_true",
                    help="强制在当前终端里运行，不要另开窗口")
     p.add_argument("--window-size", metavar="COLSxROWS", default=None,
-                   help="独立窗口的字符尺寸，默认竖屏 50x42")
+                   help="独立窗口的字符尺寸，默认竖屏 70x56")
     p.add_argument("--spin", type=float, default=None, metavar="DEG_PER_SEC",
                    help="唱片转速（度/秒），默认 15（约 24 秒一圈）；调大转更快")
     p.add_argument("--theme-fade", type=float, default=None, metavar="SECONDS",

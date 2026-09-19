@@ -153,14 +153,14 @@ musiccil qq:001I6gzS3LufWy
 ## 4. 想让窗口长得不一样
 
 ```bat
-musiccil --window-size 50x46 "稻香"
+ musiccil --window-size 100x30 "稻香"
 musiccil --spin 8 "稻香"
 musiccil --theme-fade 1.6 "稻香"
 musiccil --audio-fade 0.5 "稻香"
 musiccil --volume 60 "稻香"
 ```
 
-依次是：窗口的字符尺寸（默认竖屏 50x42）、唱片转速（度/秒，默认 15，约 24 秒一圈）、
+依次是：窗口的字符尺寸（默认竖屏 70x56）、唱片转速（度/秒，默认 15，约 24 秒一圈）、
 换曲的配色过渡（默认 0.9 秒，0 就是不过渡）、切歌时的音频淡入淡出（默认 0.22 秒，
 0 就是直接切）、初始音量。
 
